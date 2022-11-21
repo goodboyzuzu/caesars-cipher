@@ -11,6 +11,11 @@ class CaesarsCipherTest {
     }
 
     @Test
+    void testCipheredMessageWIthOffsetOf11(){
+        assertEquals("tai mdq kag pauzs fapmk", caesarsCipher.cipher("how are you doing today", 11));
+    }
+
+    @Test
     void testEmptyString(){
         assertEquals("", caesarsCipher.cipher("",12));
     }
